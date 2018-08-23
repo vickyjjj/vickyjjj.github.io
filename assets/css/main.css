@@ -1792,7 +1792,7 @@ input, select, textarea {
 			}
 
 		header.major p {
-			color: #fff;
+			color: #1c1914;
 			top: 0;
 		}
 
@@ -1859,7 +1859,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			box-shadow: 0 0 0 2px #21b2a6;
+			box-shadow: 0 0 0 2px #fccc79;
 		}
 
 	select {
@@ -1951,7 +1951,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			box-shadow: 0 0 0 2px #21b2a6;
+			box-shadow: 0 0 0 2px #fccc79;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2809,7 +2809,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
+			background-color: #fccc79;
 			color: #c8ece9;
 		}
 
@@ -2842,7 +2842,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style1 header.major p {
-				color: #c8ece9;
+				color: #1c1914;
 			}
 
 			.wrapper.style1 label {
@@ -2863,7 +2863,7 @@ input, select, textarea {
 
 				.wrapper.style1 select option {
 					color: #ffffff;
-					background: #21b2a6;
+					background: #fccc79;
 				}
 
 			.wrapper.style1 input[type="checkbox"] + label,
@@ -2879,7 +2879,7 @@ input, select, textarea {
 			.wrapper.style1 input[type="checkbox"]:checked + label:before,
 			.wrapper.style1 input[type="radio"]:checked + label:before {
 				background: #ffffff;
-				color: #21b2a6;
+				color: #fccc79;
 			}
 
 			.wrapper.style1 ::-webkit-input-placeholder {
@@ -3005,7 +3005,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style3 header.major p {
-				color: #d3d4e4;
+				color: #1c1914;
 			}
 
 			.wrapper.style3 label {
@@ -3168,7 +3168,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style5 header.major p {
-				color: #4E4852;
+				color: #1c1914;
 			}
 
 			.wrapper.style5 label {
@@ -3343,7 +3343,7 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: #21b2a6;
+		background: #fccc79;
 		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
@@ -4012,22 +4012,8 @@ input, select, textarea {
 					text-transform: none !important;
 				}
 
-				ul.feature-icons li:before {
-					background: #4acaa8;
-					border-radius: 100%;
-					color: #ffffff;
-					display: block;
-					height: 2.5em;
-					left: 0;
-					line-height: 2.5em;
-					position: absolute;
-					text-align: center;
-					top: 0;
-					width: 2.5em;
-				}
-
-				ul.feature-icons li i:before {
-					background: #4acaa8;
+				ul.feature-icons li i:before, li:before {
+					background: #b096ff;
 					border-radius: 100%;
 					color: #ffffff;
 					display: block;

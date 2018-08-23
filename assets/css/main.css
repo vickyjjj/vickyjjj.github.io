@@ -3997,11 +3997,10 @@ input, select, textarea {
 			ul.feature-icons li {
 				text-decoration: none;
 				display: inline-block;
-				margin: 0 0 1.6875em 0;
 				padding: 0.35em 0 0 3.5em;
 				position: relative;
 				vertical-align: top;
-				width: 48%;
+				width: 30%;
 			}
 
 				ul.feature-icons li:before {
@@ -4014,6 +4013,20 @@ input, select, textarea {
 				}
 
 				ul.feature-icons li:before {
+					background: #4acaa8;
+					border-radius: 100%;
+					color: #ffffff;
+					display: block;
+					height: 2.5em;
+					left: 0;
+					line-height: 2.5em;
+					position: absolute;
+					text-align: center;
+					top: 0;
+					width: 2.5em;
+				}
+
+				ul.feature-icons li i:before {
 					background: #4acaa8;
 					border-radius: 100%;
 					color: #ffffff;

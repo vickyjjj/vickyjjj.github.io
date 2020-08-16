@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/font-mfizz/font-mfizz.css">
+		<link rel="stylesheet" href="assets/fonts/all.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="landing is-preload">
@@ -26,11 +27,8 @@
 									<div id="menu">
 										<ul>
 											<li><a href="index.html">Home</a></li>
-											<!--<li><a href="images/Victoria_Juan_Resume_Red.pdf">Resumé</a></li>-->
 											<li><a href="https://github.com/vickyjjj">Github</a></li>
 											<li><a href="https://www.linkedin.com/in/victoria-juan/">LinkedIn</a></li>
-											<li><a href="https://medium.com/@squintyblu">Medium</a></li>
-											<!--<li><a href="#cta">Email</a></li>-->
 										</ul>
 									</div>
 								</li>
@@ -53,13 +51,6 @@
 						<div class="inner">
 							<header class="major">
 								<h2>Hi, I'm Vic.</h2>
-								<!--<p>I'm currently an EECS sophomore at MIT that's intrigued by fintech,
-									artificial intelligence, and robotics. </br>I believe that the combination
-									of both faster electronics and smarter software systems has the potential
-									</br>to greatly increase computational power and solve problems across
-									industries. I've always been eager </br>to expand my skillset, and I enjoy
-									the long hours of reading API documentation, exploring forums & repos,
-									</br>and debugging & testing it takes to bring a project to the finish line.</p>-->
 							</header>
 						</div>
 					</section>
@@ -68,14 +59,52 @@
 
 					<section id="two" class="wrapper alt style2">
 						<section class="spotlight">
+							<div class="image"><img src="images/ts.gif" alt="" /></div><div class="content">
+								<h2>Texture Synthesis and Image Inpainting</h2>
+								<p>I compared the motivation and results of texture synthesis and image inpainting for my 6.865 Computational Photography final project. For texture synthesis and hole-filling, I coded the method in "Texture Synthesis by Non-Parametric Sampling" (Efros and Leung, 1999) over images of both stochastic and tiled patterns, by implementing a per-pixel window sampling algorithm Gaussian blur and a normalized sum of squared differences. For image inpainting, I implemented the iterative method in "Image Inpainting" (Bertalmio, Sapiro, Caselles and Ballester, 2000), which aims to connect isophite lines at region boundaries using the structure tensor calculated from the luminance gradients and Poisson-based gradient descent, and then estimates coloration using anisotropic diffusion.</p>
+								<ul class="feature-icons">
+										<li><i class="icon-cplusplus"></i>C++</li>
+										<li><i class="fas fa-camera"></i>Comp Photog</li>
+								</ul>
+								<a href="https://github.com/vickyjjj/6.865-Final" class="button">View Repo</a>
+							</div>
+						</section>
+
+						<section class="spotlight">
+							<div class="image"><img src="images/training.png" alt="" /></div><div class="content">
+								<h2>Few-shot learning for rare cardiovascular disease detection</h2>
+								<p>This was a group project for the 6.871: Machine Learning in Healthcare class. We proposed a metalearning approach, specifically a few-shot learning approach, to handle classification of rare conditions as well as generalization to unseen rare conditions. We pretrained a CNN architecture on healthy patients and some common conditions, and transfer learn this model onto few shot training tasks for rare disease detection. Within the project, my tasks included data processing to turn 10,000 patient ECG readings to input and label tensors, writing parts of the twin network model, implementing some of the training and dataloader processes, and helping with the hyperparameter and validation set optimization, all using Pytorch. In our final paper, I wrote on cohort/feature selection; AUC, hyperparameter, loss, and similarity results; and clinical relevance. Our results achieved 0.35 in top 5 matching, and 32/45 patients with at least one top 2 matching out of 2 conditions.</p>
+								<ul class="feature-icons">
+										<li><i class="fas fa-fire"></i>Pytorch</li>
+										<li><i class="fas fa-code-branch"></i>ML</li>
+										<li><i class="fas fa-file-medical-alt"></i>Healthcare</li>
+								</ul>
+								<a href="mailto:vjuan@mit.edu" class="button">Request repo + paper access</a>
+							</div>
+						</section>
+
+						<section class="spotlight">
+							<div class="image"><img src="images/protease.png" alt="" /></div><div class="content">
+								<h2>COVID Protease Inhibition via Random Matrix Theory</h2>
+								<p>This was a group project for the 18.065: Matrix Methods in Data Analysis, Signal Processing, and Machine Learning class. We propose a linear algrebra-based random matrix theory method to analyze coronavirus protease inhibition data to understand potential similarities between compounds that inhibit protease function, and compare this to experimental techniques such as RNNs. My tasks included implementing methods described in "Predicting protein–ligand affinity with a random matrix framework" (Lee, Brenner, Colwell, 2016) using numpy to find statistically significant eigenvectors using the MP distribution of protein Morgan fingerprints’ correlation matrix eigenvalues and build a subspace for projection of evaluation set proteins for inhibitory activity identification.</p>
+								<ul class="feature-icons">
+										<li><i class="icon-python"></i>Numpy</li>
+										<li><i class="fas fa-superscript"></i>Linear Algebra</li><li><i class="fas fa-file-medical-alt"></i>Healthcare</li>
+								</ul>
+								<a href="mailto:vjuan@mit.edu" class="button">Request repo + paper access</a>
+							</div>
+						</section>
+
+						<section class="spotlight">
 							<div class="image"><img src="images/nano.png" alt="" /></div><div class="content">
 								<h2>RPi Interlock + Measurement System</h2>
 								<p>A Rasberry Pi programmed with a Sense hat, touchscreen, and relay, with automated data collection and websocket scripting. A PHP webserver enables HTTP request data retrieval. This semester, I’m focusing on using OpenCV and building models for a smart safety system that tracks user activity, classifies objects used, and pings a parallelized alarm system. With MIT.nano.</p>
 								<ul class="feature-icons">
 										<li><i class="icon-php-alt"></i>PHP</li>
 										<li><i class="icon-raspberrypi"></i>Rasberry Pi</li>
+										<li><i class="fas fa-microchip"></i>IOT</li>
 								</ul>
-								<a href="https://github.com/vickyjjj/PHPLearning" class="button icon fa-github">View Repo</a>
+								<a href="https://github.com/vickyjjj/PHPLearning" class="button">View Repo</a>
 							</div>
 						</section>
 						<section class="spotlight">
@@ -84,9 +113,9 @@
 								<p>A visualization of a simple probabilistic roadmap modeling method for calculating a robotic path in a room of obstacles. Random points are sampled throughout the space, and a best path from the initialization to goal point is found using Dijkstra's or DFS.</p>
 								<ul class="feature-icons">
 										<li><i class="icon-python"></i>Python</li>
-										<li><i class="fa-line-chart"></i>Matplotlib</li>
+										<li><i class="fas fa-line-chart"></i>Matplotlib</li>
 								</ul>
-								<a href="https://github.com/vickyjjj/PRM" class="button icon fa-github">View Repo</a>
+								<a href="https://github.com/vickyjjj/PRM" class="button">View Repo</a>
 							</div>
 						</section>
 						<section class="spotlight">
@@ -95,10 +124,10 @@
 								<p>An Android mobile app for journalism students, professionals, and organizations to maintain and share sources. Jerd allows journalists to take pictures, record audio, and jot down notes, and to choose to save them on their mobile devices and/or in the cloud. Collaborators can then download the material off the cloud using a password to transcribe or examine others' material.</p>
 								<ul class="feature-icons">
 										<li><i class="icon-java"></i>Java</li>
-										<li class="fa-android">Android</li>
+										<li><i class="fab fa-android"></i>Android</li>
 										<li><i class="icon-fire-alt"></i>Firebase</li>
 								</ul>
-								<a href="https://github.com/vickyjjj/JerdApp" class="button icon fa-github">View Repo</a>
+								<a href="https://github.com/vickyjjj/JerdApp" class="button">View Repo</a>
 							</div>
 						</section>
 						<section class="spotlight">
@@ -110,7 +139,7 @@
 										<li><i class="icon-javascript"></i>JavaScript</li>
 										<li><i class="icon-sass"></i>SCSS</li>
 								</ul>
-								<a href="https://github.com/vickyjjj/Events-Grid-Calendar" class="button icon fa-github">View Repo</a>
+								<a href="https://github.com/vickyjjj/Events-Grid-Calendar" class="button">View Repo</a>
 							</div>
 						</section>
 						<section class="spotlight">
@@ -119,9 +148,9 @@
 								<p>A robot waiter that can fetch your order of drinks. The robot uses Bayesian probabilistic models to analyze thermal camera imaging data and determine the number of fingers raised. Then, it uses an internal state machine combined with linear-time-invariant models to complete autonomous wall-following driving to fetch your order.</p>
 								<ul class="feature-icons">
 										<li><i class="icon-python"></i>Python</li>
-										<li class="fa-microchip">Embedded Systems</li>
+										<li><i class="fas fa-microchip"></i>Embedded Systems</li>
 								</ul>
-								<a href="https://github.com/vickyjjj/6.01-Final-Project" class="button icon fa-github">View Repo</a>
+								<a href="https://github.com/vickyjjj/6.01-Final-Project" class="button">View Repo</a>
 							</div>
 						</section>
 						<section class="spotlight">
@@ -131,7 +160,7 @@
 								<ul class="feature-icons">
 										<li><i class="icon-cplusplus"></i>C++</li>
 								</ul>
-								<a href="https://github.com/vickyjjj/6.179-Final-Project" class="button icon fa-github">View Repo</a>
+								<a href="https://github.com/vickyjjj/6.179-Final-Project" class="button">View Repo</a>
 							</div>
 						</section>
 						<section class="spotlight">
@@ -139,9 +168,9 @@
 								<h2>Swarmathon</h2>
 								<p>A project that compared a variety of biology-based swarming algorithms, such as bat, glowworm, ant pheromone, and bee swarming algorithms, in both deterministic and random walk motions. </p>
 								<ul class="feature-icons">
-										<li class="fa-caret-square-o-right">NetLogo</li>
+										<li><i class="far fa-play-circle"></i>NetLogo</li>
 								</ul>
-								<a href="https://github.com/vickyjjj/SwarmathonMethods" class="button icon fa-github">View Repo</a>
+								<a href="https://github.com/vickyjjj/SwarmathonMethods" class="button">View Repo</a>
 							</div>
 						</section>
 						<section class="spotlight">
@@ -150,10 +179,10 @@
 								<p>This mobile app allows students to log in, view their class schedules, set up notification reminders for due dates, and view assignments from their classes all in one place, negating the need for students to find and navigate different teacher websites.</p>
 								<ul class="feature-icons">
 										<li><i class="icon-java"></i>Java</li>
-										<li class="fa-code">XML</li>
-										<li class="fa-android">Android</li>
+										<li><i class="fas fa-code"></i>XML</li>
+										<li><i class="fab fa-android"></i>Android</li>
 								</ul>
-								<a href="https://github.com/vickyjjj/NPHSHomework" class="button icon fa-github">View Repo</a>
+								<a href="https://github.com/vickyjjj/NPHSHomework" class="button">View Repo</a>
 							</div>
 						</section>
 					</section>
@@ -221,9 +250,8 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="icons">
-							<li><a href="www.linkedin.com/in/victoria-juan" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/vickyjjj" class="icon fa-github"><span class="label">Github</span></a></li>
-							<!--<li><a href="#cta" class="icon fa-envelope-o"><span class="label">Email</span></a></li>-->
+							<li><a href="www.linkedin.com/in/victoria-juan" class="fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/vickyjjj" class="fab fa-github"><span class="label">Github</span></a></li>
 						</ul>
 						<ul class="copyright">
 							<li>&copy; Vic Juan</li>
